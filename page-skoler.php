@@ -41,7 +41,7 @@ get_header();
 				const skabelon = document.querySelector("template")
 				document.addEventListener("DOMContentLoaded", start);
 
-				const url = "https://mariksen.dk/kea/2-semester/09_cms/unesco_site/wp-json/wp/v2/skole";
+				const url = "https://mariksen.dk/kea/2-semester/09_cms/unesco_site/wp-json/wp/v2/skoler";
 				const catUrl = "https://mariksen.dk/kea/2-semester/09_cms/unesco_site/wp-json/wp/v2/categories";
 				
 				function start(){
