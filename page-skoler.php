@@ -14,6 +14,8 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
+		<h1 id="overskrift">Skoler i Netværket</h1>
+		<p>Se listen over de mange skoler, der er en del af det danske UNESCO ASP-netværk. Find også skolernes hjemmesider samt oplysningerne på de individuelle skolers kontaktpersoner.</p>
 		<section id="skole-oversigt"> </section>
 
 			
