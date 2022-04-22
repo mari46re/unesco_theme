@@ -45,6 +45,7 @@ get_header();
 
 				const url = "https://mariksen.dk/kea/2-semester/09_cms/unesco_site/wp-json/wp/v2/skole";
 				const catUrl = "https://mariksen.dk/kea/2-semester/09_cms/unesco_site/wp-json/wp/v2/categories";
+				
 				function start(){
 				console.log("nu er vi i start")
 				hentData();
