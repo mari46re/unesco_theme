@@ -25,8 +25,8 @@ get_header();
 					<img src="" alt="">
 					<h3></h3>
 					<p></p>
-					<a href="mailto:"></a>
-					<a href=""></a>
+					<a id="mail" href="mailto:"></a>
+					<a id="link" href=""></a>
 				</article>
 			</template>
 
@@ -68,6 +68,9 @@ get_header();
 					const klon = skabelon.cloneNode(true).content;
 				klon.querySelector("img").src = skole.logo.guid;
 				klon.querySelector("h3").textContent = skole.title.rendered;
+				klon.querySelector("p").textContent = skole.kontaktperson;
+				klon.querySelector("#mail").textContent = skole.mail;
+				klon.querySelector("#link").textContent = skole.link;
 				liste.appendChild(klon);
 				}
 			})
