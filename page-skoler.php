@@ -14,6 +14,13 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
+		<section> </section>
+
+			
+				
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
 
 			<template>
 				<article>
@@ -27,13 +34,11 @@ get_header();
 
 			<script>
 				console.log("forbundet")
+
+				let skoler = [];
+				let cateories;
 				
 			</script>
-			
-				
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
 
 <?php
 get_footer();
