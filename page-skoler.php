@@ -50,6 +50,30 @@ get_header();
 				console.log("nu er vi i start")
 				hentData();
 				}
+
+				async function hentData() {
+				const respons = await fetch(url);
+				const catRespons = await fetch(catUrl);
+
+				skoler = await respons.json();
+				categories = await catRespons.json();
+				console.log(categories);
+
+				visSkoler();
+				}
+
+				function visSkoler(){
+				console.log(skoler)
+				liste.innerHTML="";
+				skoler.forEach(skole =>{
+				if(filterSkole == "alle" || skole.categories.includes(parseInt(filterProjekt))){
+				const klon = skabelon.cloneNode(true).content;
+				klon.querySelector("img").src = skole.billede2.guid;
+				klon.querySelector("h3").textContent = skole.title.rendered;
+				liste.appendChild(klon);
+				}
+				})
+				}
 				
 			</script>
 
