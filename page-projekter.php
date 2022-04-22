@@ -57,6 +57,15 @@ async function hentData() {
 
 function visProjekter(){
 	console.log(projekter)
+	liste.innerHTML="";
+	projekter.forEach(projekt =>{
+		if(filterProjekt == "alle" || projekt.categories.includes(parseInt(filterProjekt))){
+			const klon = skabelon.cloneNode(true).content;
+			klon.querySelector("img").src = projekt.billede2.guid;
+			klon.querySelector("h3").textContent = projekt.title.rendered;
+			liste.appendChild(klon);
+		}
+	})
 }
 
 </script>
