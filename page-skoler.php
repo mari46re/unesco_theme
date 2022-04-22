@@ -20,9 +20,7 @@ get_header();
 				
 
 		</main><!-- #main -->
-	</div><!-- #primary -->
-
-			<template>
+		<template>
 				<article>
 					<img src="" alt="">
 					<h3></h3>
@@ -77,5 +75,7 @@ get_header();
 				
 			</script>
 
+	</div><!-- #primary -->
+			
 <?php
 get_footer();
