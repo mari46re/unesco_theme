@@ -41,7 +41,7 @@ get_header();
 				const skabelon = document.querySelector("template")
 				document.addEventListener("DOMContentLoaded", start);
 
-				const url = "https://mariksen.dk/kea/2-semester/09_cms/unesco_site/wp-json/wp/v2/skoler";
+				const url = "https://mariksen.dk/kea/2-semester/09_cms/unesco_site/wp-json/wp/v2/skole";
 				const catUrl = "https://mariksen.dk/kea/2-semester/09_cms/unesco_site/wp-json/wp/v2/categories";
 				
 				function start(){
@@ -62,15 +62,15 @@ get_header();
 
 				function visSkoler(){
 				console.log(skoler)
-			// 	liste.innerHTML="";
-			// 	skoler.forEach(skole =>{
-			// 	if(filterSkole == "alle" || skole.categories.includes(parseInt(filterProjekt))){
-			// 		const klon = skabelon.cloneNode(true).content;
-			// 	klon.querySelector("img").src = skole.billede2.guid;
-			// 	klon.querySelector("h3").textContent = skole.title.rendered;
-			// 	liste.appendChild(klon);
-			// 	}
-			// })
+				liste.innerHTML="";
+				skoler.forEach(skole =>{
+				if(filterSkole == "alle" || skole.categories.includes(parseInt(filterProjekt))){
+					const klon = skabelon.cloneNode(true).content;
+				klon.querySelector("img").src = skole.billede2.guid;
+				klon.querySelector("h3").textContent = skole.title.rendered;
+				liste.appendChild(klon);
+				}
+			})
 		}
 				
 			</script>
