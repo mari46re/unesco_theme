@@ -44,6 +44,21 @@ function start(){
 	hentData();
 }
 
+async function hentData() {
+        const respons = await fetch(url);
+		const catRespons = await fetch(catUrl);
+
+        projekter = await respons.json();
+		categories = await catRespons.json();
+		console.log(categories);
+
+		visProjekter();
+}
+
+function visProjekter(){
+	console.log(projekter)
+}
+
 </script>
 			
 
