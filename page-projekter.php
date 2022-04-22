@@ -15,16 +15,16 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 <h1 id="overskrift">Projekter</h1>
-<label for="pet-select">Choose a pet:</label>
+<label for="pet-select">Vælg et verdensmål</label>
 
-<select name="pets" id="pet-select">
-    <option value="">--Please choose an option--</option>
-    <option value="dog">Dog</option>
-    <option value="cat">Cat</option>
+<select name="projekter" id="projekt-valg">
+    <!-- <option value="">Vælg</option> -->
+    <option data-projekt="alle">Alle</option>
+    <!-- <option value="cat">Cat</option>
     <option value="hamster">Hamster</option>
     <option value="parrot">Parrot</option>
     <option value="spider">Spider</option>
-    <option value="goldfish">Goldfish</option>
+    <option value="goldfish">Goldfish</option> -->
 </select>
 
 <section id="projekt-oversigt"></section>
@@ -38,11 +38,11 @@ get_header();
 </template>
 
 <script>
-	"use strict";
-	document.querySelector("#pet-select").addEventListener("change",selectChange)
-	function selectChange(){
-		console.log("Vi har ændret i DD")
-	}
+	// "use strict";
+	// document.querySelector("#pet-select").addEventListener("change",selectChange)
+	// function selectChange(evt){
+	// 	console.log("Vi har ændret i DD",evt.target.value)
+	// }
 	console.log("så er vi i gang")
 
 	let projekter = [];
@@ -70,6 +70,21 @@ async function hentData() {
 		console.log(categories);
 
 		visProjekter();
+		opretMuligheder();
+}
+
+function opretMuligheder(){
+	categories.forEach(cat =>{document.querySelector("#projekt-valg").innerHTML +=`<option class="filter" data-projekt="${cat.id}">${cat.name}</option>`
+	})
+
+	addEventListenerToOptions();
+}
+
+function addEventListenerToOptions(){
+	document.querySelectorAll("#projekt-valg").forEach(elm => {elm.addEventListener("click", filtrering);
+})
+
+visProjekter();
 }
 
 function visProjekter(){
