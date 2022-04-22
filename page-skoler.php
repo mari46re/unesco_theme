@@ -14,7 +14,7 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-		<section> </section>
+		<section id="skole-oversigt"> </section>
 
 			
 				
@@ -36,7 +36,19 @@ get_header();
 				console.log("forbundet")
 
 				let skoler = [];
-				let cateories;
+				let categories;
+				let filterSkole = "alle";
+
+				const liste = document.querySelector("#skole-oversigt")
+				const skabelon = document.querySelector("template")
+				document.addEventListener("DOMContentLoaded", start);
+
+				const url = "https://mariksen.dk/kea/2-semester/09_cms/unesco_site/wp-json/wp/v2/skole";
+				const catUrl = "https://mariksen.dk/kea/2-semester/09_cms/unesco_site/wp-json/wp/v2/categories";
+				function start(){
+				console.log("nu er vi i start")
+				hentData();
+				}
 				
 			</script>
 
