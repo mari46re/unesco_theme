@@ -41,3 +41,20 @@ li {
 a:hover {
   color: #92d3ec !important;
 }
+
+@media (min-width: 1000px) {
+  #projekt-oversigt,
+  #overskrift {
+    width: 1000px;
+    margin: auto;
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  #projekt-oversigt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 100px;
+  }
+}
