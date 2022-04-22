@@ -38,6 +38,11 @@ get_header();
 </template>
 
 <script>
+	"use strict";
+	document.querySelector("#pet-select").addEventListener("change",selectChange)
+	function selectChange(){
+		console.log("Vi har ændret i DD")
+	}
 	console.log("så er vi i gang")
 
 	let projekter = [];
