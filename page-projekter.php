@@ -15,6 +15,18 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 <h1 id="overskrift">Projekter</h1>
+<label for="pet-select">Choose a pet:</label>
+
+<select name="pets" id="pet-select">
+    <option value="">--Please choose an option--</option>
+    <option value="dog">Dog</option>
+    <option value="cat">Cat</option>
+    <option value="hamster">Hamster</option>
+    <option value="parrot">Parrot</option>
+    <option value="spider">Spider</option>
+    <option value="goldfish">Goldfish</option>
+</select>
+
 <section id="projekt-oversigt"></section>
 		</main><!-- #main -->
 
