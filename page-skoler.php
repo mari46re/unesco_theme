@@ -66,7 +66,7 @@ get_header();
 				console.log(skoler)
 				liste.innerHTML="";
 				skoler.forEach(skole =>{
-				if(filterSkole == "alle" || skole.categories.includes(parseInt(filterProjekt))){
+				if(filterSkole == "alle" || skole.categories.includes(parseInt(filterSkole))){
 					const klon = skabelon.cloneNode(true).content;
 				klon.querySelector("img").src = skole.logo.guid;
 				klon.querySelector("h3").textContent = skole.title.rendered;
