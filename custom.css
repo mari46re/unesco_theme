@@ -1,0 +1,43 @@
+::before,
+.edit-link {
+  display: none !important;
+}
+
+body {
+  background-color: #fdfcfc;
+}
+
+h1 {
+  font-family: balboa-plus-fill, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #232f66;
+}
+
+h2 {
+  font-family: rustica, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #184887;
+}
+
+h3 {
+  font-family: rustica, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #292929;
+}
+
+p,
+address,
+a,
+li {
+  font-family: rustica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #292929 !important;
+}
+
+a:hover {
+  color: #92d3ec !important;
+}
