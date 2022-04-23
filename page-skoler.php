@@ -16,6 +16,18 @@ get_header();
 		<main id="main" class="site-main">
 		<h1 id="overskrift">Skoler i Netværket</h1>
 		<p>Se listen over de mange skoler, der er en del af det danske UNESCO ASP-netværk. Find også skolernes hjemmesider samt oplysningerne på de individuelle skolers kontaktpersoner.</p>
+		<label for="pet-select">Vælg et verdensmål</label>
+
+		<select name="Skoler" id="Skole-valg">
+			<!-- <option value="">Vælg</option> -->
+			<option data-skole="alle">Alle</option>
+			<!-- <option value="cat">Cat</option>
+			<option value="hamster">Hamster</option>
+			<option value="parrot">Parrot</option>
+			<option value="spider">Spider</option>
+			<option value="goldfish">Goldfish</option> -->
+		</select>
+		
 		<section id="skole-oversigt"> </section>
 
 			
@@ -58,6 +70,21 @@ get_header();
 				skoler = await respons.json();
 				categories = await catRespons.json();
 				console.log(categories);
+
+				visSkoler();
+				opretMuligheder();
+				}
+
+				function opretMuligheder(){
+				categories.forEach(cat =>{document.querySelector("#skole-valg").innerHTML +=`<option class="filter" data-projekt="${cat.id}">${cat.name}</option>`
+				})
+
+					addEventListenerToOptions();
+				}
+
+				function addEventListenerToOptions(){
+					document.querySelectorAll("#skole-valg").forEach(elm => {elm.addEventListener("click", filtrering);
+				})
 
 				visSkoler();
 				}
