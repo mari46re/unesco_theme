@@ -5,3 +5,8 @@ Version:     1.0.1
 Description:  Twenty Nineteen Child Theme
 Author:      Gruppe 11
 */
+
+/* Proudly powered by WordPress skjules */
+.imprint {
+  display: none;
+}

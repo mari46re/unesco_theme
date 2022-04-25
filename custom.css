@@ -50,7 +50,7 @@ a:hover {
   gap: 10px;
 }
 
-#skole-enkle {
+#skole-oversigt {
   border: black;
   border-style: solid;
   margin: 5px;
@@ -71,8 +71,7 @@ a:hover {
 @media (min-width: 1000px) {
   #projekt-oversigt,
   #overskrift,
-  #skole-oversigt,
-  #brødtekst-skolerinet {
+  #skole-oversigt {
     width: 1000px;
     margin: auto;
     margin-bottom: 100px;
@@ -85,18 +84,5 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 100px;
-  }
-
-  #brødtekst-skolerinet {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 100px;
-    margin-left: 10px;
-  }
-
-  #skole-oversigt {
-    display: block;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 10px;
   }
 }
