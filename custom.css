@@ -49,6 +49,11 @@ a:hover {
   gap: 10px;
 }
 
+#skole-oversigt{
+  border: black;
+  border-style: solid;
+}
+
 @media (min-width: 1000px) {
   #projekt-oversigt,
   #overskrift,#skole-oversigt {
