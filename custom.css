@@ -68,8 +68,9 @@ a:hover {
   align-content: end;
 } */
 
-#site-navigation > div.main-menu-more > ul > li > button {
+.sub-menu li {
   background-color: white;
+  border: 1px solid black;
 }
 
 @media (min-width: 1000px) {
