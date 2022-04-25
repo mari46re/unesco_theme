@@ -60,6 +60,7 @@ a:hover {
 .site-branding {
   display: flex;
   justify-content: space-between;
+  font-size: 1rem;
 }
 
 @media (min-width: 1000px) {
