@@ -50,6 +50,12 @@ a:hover {
   gap: 10px;
 }
 
+#post-2 > div > div:nth-child(3) > div:nth-child(1) > div > div,
+#post-2 > div > div:nth-child(3) > div:nth-child(2) > div > div,
+#post-2 > div > div:nth-child(3) > div:nth-child(2) > div > div {
+  border: 1px #232f66;
+}
+
 #skole-enkle {
   border: black;
   border-style: solid;
