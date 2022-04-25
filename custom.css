@@ -63,10 +63,10 @@ a:hover {
   font-size: 0.6rem;
 }
 
-#navigation {
+/* #navigation {
   display: flex;
   align-content: end;
-}
+} */
 
 @media (min-width: 1000px) {
   #projekt-oversigt,
