@@ -52,6 +52,7 @@ a:hover {
 #skole-enkle{
   border: black;
   border-style: solid;
+  margin: 5px;
 }
 
 @media (min-width: 1000px) {
