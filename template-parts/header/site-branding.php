@@ -11,6 +11,7 @@
 
 <a href="https://mariksen.dk/kea/2-semester/09_cms/unesco_site/"><img src="header_logo.svg" alt="logo"></a>
 
+<div id="navigation">
 	<?php
 	$description = get_bloginfo( 'description', 'display' );
 	if ( $description || is_customize_preview() ) :
@@ -47,4 +48,5 @@
 			?>
 		</nav><!-- .social-navigation -->
 	<?php endif; ?>
+	</div>
 </div><!-- .site-branding -->
