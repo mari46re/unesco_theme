@@ -53,6 +53,7 @@ a:hover {
   border: black;
   border-style: solid;
   margin: 5px;
+  padding: 10px;
 }
 
 @media (min-width: 1000px) {
