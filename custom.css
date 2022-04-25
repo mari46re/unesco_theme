@@ -68,7 +68,7 @@ a:hover {
   align-content: end;
 } */
 
-#site-navigation > div.main-menu-more > ul > li > button {
+.sub-menu li {
   background-color: white;
 }
 
