@@ -58,9 +58,13 @@ a:hover {
 }
 
 .site-branding {
-  display: flex;
-  justify-content: space-around;
-  font-size: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  font-size: 0.5rem;
+}
+
+#navigation {
+  place-content: flex-end;
 }
 
 @media (min-width: 1000px) {
