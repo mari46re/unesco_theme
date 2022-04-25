@@ -68,20 +68,32 @@ a:hover {
   align-content: end;
 } */
 
+/*--------SUB MENU -- Dvs de menuer der dukker op, når man hover i navigationen--------*/
 .sub-menu {
   border: 1px solid black;
 }
+/*Listepunkternes baggrundsfarve*/
+.sub-menu li {
+  background-color: white;
+}
 
+/*Listepunkternes styling når man hover dem*/
 .sub-menu li a:hover {
   background-color: rgb(240, 236, 202) !important;
   color: rgb(41, 41, 41) !important;
   text-shadow: 1px 2px #92d3ec !important;
 }
 
-.sub-menu li {
-  background-color: white;
+#post-2 > div > div:nth-child(8) {
+  display: grid !important;
+  grid-template-columns: 2fr 1fr 1fr !important;
 }
 
+#post-2 > div > div:nth-child(8) > div:nth-child(1) > figure:nth-child(1) {
+  height: 200px;
+}
+
+/*GRID */
 @media (min-width: 1000px) {
   #projekt-oversigt,
   #overskrift,
