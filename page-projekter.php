@@ -20,11 +20,6 @@ get_header();
 <select name="projekter" id="projekt-valg">
     <!-- <option value="">Vælg</option> -->
     <option data-projekt="alle">Alle</option>
-    <!-- <option value="cat">Cat</option>
-    <option value="hamster">Hamster</option>
-    <option value="parrot">Parrot</option>
-    <option value="spider">Spider</option>
-    <option value="goldfish">Goldfish</option> -->
 </select>
 
 <section id="projekt-oversigt"></section>
@@ -47,6 +42,7 @@ get_header();
 
 	let projekter = [];
 	let categories;
+	let valgt;
 	let filterProjekt = "alle";
 
 	const liste = document.querySelector("#projekt-oversigt")
@@ -74,17 +70,26 @@ async function hentData() {
 }
 
 function opretMuligheder(){
-	categories.forEach(cat =>{document.querySelector("#projekt-valg").innerHTML +=`<option class="filter" data-projekt="${cat.id}">${cat.name}</option>`
+	console.log("nu er vi i opret muligheder")
+	categories.forEach(cat => {
+		document.querySelector("#projekt-valg").innerHTML +=`<option class="filter" data-projekt="${cat.id}">${cat.name}</option>`
 	})
 
 	addEventListenerToOptions();
 }
 
 function addEventListenerToOptions(){
-	document.querySelectorAll("#projekt-valg").forEach(elm => {elm.addEventListener("click", filtrering);
-})
+	console.log("nu tilføjer vi eventlisteners til mulighederne")
+	document.querySelectorAll("#projekt-valg").forEach(elm =>{elm.addEventListener("change", filtrering);
+})	
+// document.querySelector("#projekt-valg").addEventListener("change", filtrering)
+}
 
-visProjekter();
+function filtrering(){
+	// valgt = document.querySelector("#projekt-valg option").value;
+	console.log(valgt)
+	filterProjekt = this.dataset.value;
+	visProjekter();
 }
 
 function visProjekter(){
