@@ -73,10 +73,3 @@ a:hover {
     margin-bottom: 100px;
   }
 }
-
-@media only screen and (min-width: 1168px) {
-  #colophon .widget-column .widget {
-    margin-right: 0;
-    width: 100%;
-  }
-}

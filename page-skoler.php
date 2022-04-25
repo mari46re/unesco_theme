@@ -15,18 +15,12 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 		<h1 id="overskrift">SKOLER I NETVÆRKET</h1>
-		<p>Se listen over de mange skoler, der er en del af det danske UNESCO ASP-netværk. Find også skolernes hjemmesider samt oplysningerne på de individuelle skolers kontaktpersoner.</p>
-		<label for="pet-select">Vælg et verdensmål</label>
+		<p id="brødtekst-skolerinet">Se listen over de mange skoler, der er en del af det danske UNESCO ASP-netværk. Find også skolernes hjemmesider samt oplysningerne på de individuelle skolers kontaktpersoner.</p>
+		
 
-		<select name="Skoler" id="Skole-valg">
-			<!-- <option value="">Vælg</option> -->
-			<option data-skole="alle">Alle</option>
-			<!-- <option value="cat">Cat</option>
-			<option value="hamster">Hamster</option>
-			<option value="parrot">Parrot</option>
-			<option value="spider">Spider</option>
-			<option value="goldfish">Goldfish</option> -->
-		</select>
+		<nav id="skole-valg">
+			<button data-skole="alle">Hele Danmark</button>
+		</nav>
 		
 		<section id="skole-oversigt"> </section>
 
@@ -35,7 +29,7 @@ get_header();
 
 		</main><!-- #main -->
 		<template>
-				<article>
+				<article id="skole-enkle">
 					<img src="" alt="">
 					<h3></h3>
 					<p></p>
@@ -72,21 +66,26 @@ get_header();
 				console.log(categories);
 
 				visSkoler();
-				opretMuligheder();
+				opretKanpper();
 				}
 
-				function opretMuligheder(){
-				categories.forEach(cat =>{document.querySelector("#skole-valg").innerHTML +=`<option class="filter" data-projekt="${cat.id}">${cat.name}</option>`
+				function opretKanpper(){
+				categories.forEach(cat =>{document.querySelector("#skole-valg").innerHTML +=`<button class="filter" data-skole="${cat.id}">${cat.name}</button>`
 				})
 
-					addEventListenerToOptions();
+					addEventListenerToButton();
 				}
 
-				function addEventListenerToOptions(){
-					document.querySelectorAll("#skole-valg").forEach(elm => {elm.addEventListener("click", filtrering);
+				function addEventListenerToButton(){
+					document.querySelectorAll("#skole-valg button").forEach(elm => {elm.addEventListener("click", filtrering);
 				})
 
-				visSkoler();
+				
+				}
+				function filtrering(){
+					filterSkole = this.dataset.skole;
+					consol.log(filterskole);
+					visSkoler();
 				}
 
 				function visSkoler(){
