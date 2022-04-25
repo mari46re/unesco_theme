@@ -50,7 +50,7 @@ get_header();
 				document.addEventListener("DOMContentLoaded", start);
 
 				const url = "https://mariksen.dk/kea/2-semester/09_cms/unesco_site/wp-json/wp/v2/skoler";
-				const catUrl = "https://mariksen.dk/kea/2-semester/09_cms/unesco_site/wp-json/wp/v2/categories";
+				const catUrl = "https://mariksen.dk/kea/2-semester/09_cms/unesco_site/wp-json/wp/v2/categories?per_page=100";
 				
 				function start(){
 				console.log("nu er vi i start")
