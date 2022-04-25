@@ -72,7 +72,7 @@ a:hover {
   border: 1px solid black;
 }
 
-.sub-menu li:hover {
+.sub-menu li a:hover {
   background-color: rgb(236, 225, 212) !important;
 }
 
