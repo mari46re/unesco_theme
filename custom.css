@@ -74,7 +74,7 @@ a:hover {
 
 .sub-menu li a:hover {
   background-color: rgb(240, 236, 202) !important;
-  text-shadow: 2px 2px rgb(53, 53, 53);
+  text-shadow: 2px 2px rgb(53, 53, 53) !important;
 }
 
 .sub-menu li {
