@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #fdfcfc;
+  background-color: #f7f7f3;
 }
 
 h1 {
@@ -72,6 +72,10 @@ a:hover {
   border: 1px solid black;
 }
 
+.sub-menu:hover {
+  background-color: antiquewhite;
+}
+
 .sub-menu li {
   background-color: white;
 }
@@ -96,7 +100,7 @@ a:hover {
 }
 @media only screen and (min-width: 1168px) {
   #colophon .widget-column .widget {
-    margin-right: 0 !important;
+    margin-right: 0;
     width: 100% !important;
   }
 }
