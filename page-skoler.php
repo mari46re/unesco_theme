@@ -15,7 +15,7 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 		<h1 id="overskrift">SKOLER I NETVÆRKET</h1>
-		<p>Se listen over de mange skoler, der er en del af det danske UNESCO ASP-netværk. Find også skolernes hjemmesider samt oplysningerne på de individuelle skolers kontaktpersoner.</p>
+		<p id="brødtekst-skolerinet">Se listen over de mange skoler, der er en del af det danske UNESCO ASP-netværk. Find også skolernes hjemmesider samt oplysningerne på de individuelle skolers kontaktpersoner.</p>
 		<label for="pet-select">Vælg et verdensmål</label>
 
 		<select name="Skoler" id="Skole-valg">
