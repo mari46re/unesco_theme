@@ -43,22 +43,30 @@ a:hover {
 }
 
 #projekt-oversigt,
-#overskrift,#skole-oversigt {
+#overskrift,
+#skole-oversigt {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 10px;
 }
 
-#skole-enkle{
+#skole-enkle {
   border: black;
   border-style: solid;
   margin: 5px;
   padding: 10px;
 }
 
+.site-branding {
+  display: flex;
+  justify-content: space-between;
+}
+
 @media (min-width: 1000px) {
   #projekt-oversigt,
-  #overskrift,#skole-oversigt,#brødtekst-skolerinet {
+  #overskrift,
+  #skole-oversigt,
+  #brødtekst-skolerinet {
     width: 1000px;
     margin: auto;
     margin-bottom: 100px;
@@ -66,17 +74,17 @@ a:hover {
 }
 
 @media (max-width: 600px) {
-  #projekt-oversigt,#skole-oversigt {
+  #projekt-oversigt,
+  #skole-oversigt {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 100px;
   }
 
-  #brødtekst-skolerinet{
+  #brødtekst-skolerinet {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 100px;
     margin-left: 10px;
   }
 }
-
