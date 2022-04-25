@@ -43,20 +43,22 @@ a:hover {
 }
 
 #projekt-oversigt,
-#overskrift,#skole-oversigt {
+#overskrift,
+#skole-oversigt {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 10px;
 }
 
-#skole-oversigt{
+#skole-oversigt {
   border: black;
   border-style: solid;
 }
 
 @media (min-width: 1000px) {
   #projekt-oversigt,
-  #overskrift,#skole-oversigt {
+  #overskrift,
+  #skole-oversigt {
     width: 1000px;
     margin: auto;
     margin-bottom: 100px;
@@ -64,9 +66,17 @@ a:hover {
 }
 
 @media (max-width: 600px) {
-  #projekt-oversigt,#skole-oversigt {
+  #projekt-oversigt,
+  #skole-oversigt {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width: 1168px) {
+  #colophon .widget-column .widget {
+    margin-right: 0;
+    width: 100%;
   }
 }
