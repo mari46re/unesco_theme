@@ -73,7 +73,7 @@ a:hover {
 }
 
 .sub-menu:hover {
-  background-color: antiquewhite;
+  background-color: rgb(236, 225, 212) !important;
 }
 
 .sub-menu li {
