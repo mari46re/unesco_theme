@@ -16,9 +16,9 @@ get_header();
 		<main id="main" class="site-main">
 		<h1 id="overskrift">SKOLER I NETVÆRKET</h1>
 		<p id="brødtekst-skolerinet">Se listen over de mange skoler, der er en del af det danske UNESCO ASP-netværk. Find også skolernes hjemmesider samt oplysningerne på de individuelle skolers kontaktpersoner.</p>
-		<label for="pet-select">Vælg et verdensmål</label>
+		
 
-		<nav name="Skoler" id="Skole-valg">
+		<nav id="skole-valg">
 			<button data-skole="alle">Hele Danmark</button>
 		</nav>
 		
