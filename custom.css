@@ -42,13 +42,6 @@ a:hover {
   color: #92d3ec !important;
 }
 
-#projekt-oversigt,
-#overskrift,#skole-oversigt {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 10px;
-}
-
 #skole-enkle{
   border: black;
   border-style: solid;
@@ -57,6 +50,13 @@ a:hover {
 }
 
 @media (min-width: 1000px) {
+  #projekt-oversigt,
+  #overskrift,#skole-oversigt {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+}
+
   #projekt-oversigt,
   #overskrift,#skole-oversigt,#brødtekst-skolerinet {
     width: 1000px;
@@ -77,6 +77,12 @@ a:hover {
     grid-template-columns: 1fr 1fr;
     margin-bottom: 100px;
     margin-left: 10px;
+  }
+
+  #skole-oversigt {
+    display: block;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
   }
 }
 
