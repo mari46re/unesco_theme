@@ -136,6 +136,12 @@ button:hover {
   margin-right: 60px;
 }
 
+/*Footer*/
+
+hr {
+  border: 1px solid grey;
+}
+
 /*GRID  på filtrerings-sider*/
 @media (min-width: 1000px) {
   #projekt-oversigt,
