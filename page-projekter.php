@@ -17,9 +17,11 @@ get_header();
 <h1 id="overskrift">Projekter</h1>
 <label for="pet-select">Vælg et verdensmål</label>
 
-<select name="projekter" id="projekt-valg">
+<select name="verdensmaal" id="verdensmaal-valg">
     <!-- <option value="">Vælg</option> -->
-    <option data-projekt="alle">Alle</option>
+
+    <option data-verdensmaal="alle">Alle</option>
+
 </select>
 
 <section id="projekt-oversigt"></section>
@@ -41,7 +43,7 @@ get_header();
 	console.log("så er vi i gang")
 
 	let projekter = [];
-	let categories;
+	let verdensmaal;
 	let valgt;
 	let filterProjekt = "alle";
 
@@ -50,7 +52,7 @@ get_header();
 	document.addEventListener("DOMContentLoaded", start);
 
 	const url = "https://mariksen.dk/kea/2-semester/09_cms/unesco_site/wp-json/wp/v2/projekt";
-	const catUrl = "https://mariksen.dk/kea/2-semester/09_cms/unesco_site/wp-json/wp/v2/verdensmaal?per_page=100";
+	const vmUrl = "https://mariksen.dk/kea/2-semester/09_cms/unesco_site/wp-json/wp/v2/verdensmaal?per_page=100";
 
 function start(){
 	console.log("nu er vi i start")
@@ -59,11 +61,11 @@ function start(){
 
 async function hentData() {
         const respons = await fetch(url);
-		const catRespons = await fetch(catUrl);
+		const vmRespons = await fetch(vmUrl);
 
         projekter = await respons.json();
-		categories = await catRespons.json();
-		console.log(categories);
+		verdensmaal = await vmRespons.json();
+		console.log(verdensmaal);
 
 		visProjekter();
 		opretMuligheder();
@@ -71,8 +73,8 @@ async function hentData() {
 
 function opretMuligheder(){
 	console.log("nu er vi i opret muligheder")
-	categories.forEach(cat => {
-		document.querySelector("#projekt-valg").innerHTML +=`<option class="filter" data-projekt="${cat.id}">${cat.name}</option>`
+	verdensmaal.forEach(vm => {
+		document.querySelector("#verdensmaal-valg").innerHTML +=`<option class="filter" data-projekt="${vm.id}">${vm.name}</option>`
 	})
 
 	addEventListenerToOptions();
@@ -80,7 +82,7 @@ function opretMuligheder(){
 
 function addEventListenerToOptions(){
 	console.log("nu tilføjer vi eventlisteners til mulighederne")
-	document.querySelectorAll("#projekt-valg").forEach(elm =>{elm.addEventListener("change", filtrering);
+	document.querySelectorAll("#verdensmaal-valg option").forEach(elm =>{elm.addEventListener("change", filtrering);
 })	
 // document.querySelector("#projekt-valg").addEventListener("change", filtrering)
 }
@@ -96,7 +98,7 @@ function visProjekter(){
 	console.log(projekter)
 	liste.innerHTML="";
 	projekter.forEach(projekt =>{
-		if(filterProjekt == "alle" || projekt.categories.includes(parseInt(filterProjekt))){
+		if(filterProjekt == "alle" || projekt.verdensmaal.includes(parseInt(filterProjekt))){
 			const klon = skabelon.cloneNode(true).content;
 			klon.querySelector("img").src = projekt.billede2.guid;
 			klon.querySelector("h3").textContent = projekt.title.rendered;

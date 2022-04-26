@@ -39,6 +39,8 @@ get_header();
 			</template>
 
 			<script>
+
+				
 				console.log("forbundet")
 
 				let skoler = [];
