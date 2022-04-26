@@ -113,6 +113,12 @@ button:hover {
   object-fit: cover !important;
 }
 
+/*hovedmenu*/
+
+#menu-hovedmenu li {
+  padding: 1rem !important;
+}
+
 /*Kolonner på forsiden*/
 
 #post-2 > div > div:nth-child(3) > div:nth-child(1),
