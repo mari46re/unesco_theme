@@ -94,7 +94,7 @@ function opretMuligheder(){
 
 function addEventListenerToOptions(){
 	console.log("nu tilføjer vi eventlisteners til mulighederne")
-	document.querySelectorAll("#verdensmaal-valg option").forEach(elm =>{elm.addEventListener("change", klikFiltrering);
+	document.querySelectorAll("#verdensmaal-valg option").forEach(elm =>{elm.addEventListener("click", klikFiltrering);
 })	
 // document.querySelector("#projekt-valg").addEventListener("change", filtrering)
 }
