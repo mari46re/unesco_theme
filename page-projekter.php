@@ -24,6 +24,8 @@ get_header();
 
 </select>
 
+<button id></button>
+
 <section id="projekt-oversigt"></section>
 		</main><!-- #main -->
 
@@ -35,11 +37,21 @@ get_header();
 </template>
 
 <script>
-	// "use strict";
-	// document.querySelector("#pet-select").addEventListener("change",selectChange)
-	// function selectChange(evt){
-	// 	console.log("Vi har ændret i DD",evt.target.value)
-	// }
+
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+				if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+					document.getElementById("masthead").style.backgroundColor = "#f7f7f3e6";
+					document.getElementById("logo").style.padding = "1rem"
+					
+				} else {
+					document.getElementById("masthead").style.backgroundColor = "none";
+			}
+}
+
+
+
 	console.log("så er vi i gang")
 
 	let projekter = [];
