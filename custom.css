@@ -113,6 +113,11 @@ button:hover {
   object-fit: cover !important;
 }
 
+/*Kolonner på forsiden*/
+
+#post-2 > div > div:nth-child(3) > div:nth-child(1) {
+  border: 1px solid black;
+}
 /*GRID  på filtrerings-sider*/
 @media (min-width: 1000px) {
   #projekt-oversigt,
