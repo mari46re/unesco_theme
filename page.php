@@ -32,6 +32,18 @@ get_header();
 			?>
 
 		</main><!-- #main -->
+
+		<script>
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+				if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+					document.getElementById("masthead").style.backgroundColor = "#f7f7f3c5";
+				} else {
+					document.getElementById("masthead").style.backgroundColor = "none";
+			}
+}
+		</script>
 	</div><!-- #primary -->
 
 <?php
