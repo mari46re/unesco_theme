@@ -9,7 +9,7 @@
 ?>
 <div class="site-branding">
 
-<a href="https://mariksen.dk/kea/2-semester/09_cms/unesco_site/"><img src="https://mariksen.dk/kea/2-semester/09_cms/unesco_site/wp-content/uploads/2022/04/wupsi.webp" alt="logo"></a>
+<a href="https://mariksen.dk/kea/2-semester/09_cms/unesco_site/"><img src="https://mariksen.dk/kea/2-semester/09_cms/unesco_site/wp-content/uploads/2022/04/header_logo.svg" alt="logo"></a>
 
 <div id="navigation">
 	<?php
