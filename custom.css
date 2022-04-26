@@ -69,6 +69,13 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 2fr;
   font-size: 0.6rem;
+  text-align: right;
+  align-items: center;
+}
+
+#logo_container {
+  display: grid;
+  justify-content: flex-start;
 }
 
 /* #navigation {
