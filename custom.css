@@ -71,11 +71,6 @@ a:hover {
   font-size: 0.6rem;
 }
 
-/* #navigation {
-  display: flex;
-  align-content: end;
-} */
-
 /*--------SUB MENU -- Dvs de menuer der dukker op, når man hover i navigationen--------*/
 .sub-menu {
   border: 1px solid black;
