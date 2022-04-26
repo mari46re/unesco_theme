@@ -9,21 +9,21 @@ body {
 
 h1 {
   font-family: balboa-plus-fill, sans-serif !important;
-  font-weight: 400;
+  font-weight: 400 !important;
   font-style: normal;
   color: #232f66;
 }
 
 h2 {
   font-family: rustica, sans-serif !important;
-  font-weight: 700;
+  font-weight: 700 !important;
   font-style: normal;
   color: #184887;
 }
 
 h3 {
   font-family: rustica, sans-serif !important;
-  font-weight: 600;
+  font-weight: 600 !important;
   font-style: normal;
   color: #292929;
 }
@@ -35,7 +35,7 @@ li,
 button,
 input {
   font-family: rustica, sans-serif !important;
-  font-weight: 400;
+  font-weight: 400 !important;
   font-style: normal;
   color: #292929 !important;
 }
