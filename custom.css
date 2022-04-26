@@ -115,7 +115,9 @@ button:hover {
 
 /*Kolonner på forsiden*/
 
-#post-2 > div > div:nth-child(3) > div:nth-child(1) {
+#post-2 > div > div:nth-child(3) > div:nth-child(1),
+#post-2 > div > div:nth-child(3) > div:nth-child(2),
+#post-2 > div > div:nth-child(3) > div:nth-child(3) {
   border: 1px solid black;
 }
 /*GRID  på filtrerings-sider*/
