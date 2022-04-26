@@ -84,7 +84,9 @@ a:hover {
 }
 
 /*Listepunkternes styling når man hover dem*/
-.sub-menu li a:hover {
+.sub-menu li a:hover,
+button:hover {
+  transition: 0.2s;
   background-color: rgb(240, 236, 202) !important;
   color: rgb(41, 41, 41) !important;
   text-shadow: 1px 2px #92d3ec !important;
@@ -109,7 +111,7 @@ a:hover {
   object-fit: cover !important;
 }
 
-/*GRID */
+/*GRID  på filtrerings-sider*/
 @media (min-width: 1000px) {
   #projekt-oversigt,
   #overskrift,
