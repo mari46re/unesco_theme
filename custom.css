@@ -118,7 +118,8 @@ button:hover {
 #post-2 > div > div:nth-child(3) > div:nth-child(1),
 #post-2 > div > div:nth-child(3) > div:nth-child(2),
 #post-2 > div > div:nth-child(3) > div:nth-child(3) {
-  border: 1px solid black;
+  border: 1px solid #92d3ec;
+  padding: 0.5 rem;
 }
 /*GRID  på filtrerings-sider*/
 @media (min-width: 1000px) {
