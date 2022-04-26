@@ -18,8 +18,8 @@ get_header();
 		<p id="brødtekst-skolerinet">Se listen over de mange skoler, der er en del af det danske UNESCO ASP-netværk. Find også skolernes hjemmesider samt oplysningerne på de individuelle skolers kontaktpersoner.</p>
 		
 
-		<nav id="skole-valg">
-			<button data-skole="alle">Hele Danmark</button>
+		<nav id="regioner-valg">
+			<button data-regioner="alle">Hele Danmark</button>
 		</nav>
 		
 		<section id="skole-oversigt"> </section>
@@ -54,7 +54,7 @@ get_header();
 				console.log("forbundet")
 
 				let skoler = [];
-				let categories;
+				let regioner;
 				let filterSkole = "alle";
 
 				const liste = document.querySelector("#skole-oversigt")
@@ -62,7 +62,7 @@ get_header();
 				document.addEventListener("DOMContentLoaded", start);
 
 				const url = "https://mariksen.dk/kea/2-semester/09_cms/unesco_site/wp-json/wp/v2/skoler";
-				const catUrl = "https://mariksen.dk/kea/2-semester/09_cms/unesco_site/wp-json/wp/v2/categories?per_page=100";
+				const regUrl = "https://mariksen.dk/kea/2-semester/09_cms/unesco_site/wp-json/wp/v2/regioner?per_page=100";
 				
 				function start(){
 				console.log("nu er vi i start")
@@ -71,25 +71,25 @@ get_header();
 
 				async function hentData() {
 				const respons = await fetch(url);
-				const catRespons = await fetch(catUrl);
+				const regRespons = await fetch(regUrl);
 
 				skoler = await respons.json();
-				categories = await catRespons.json();
-				console.log(categories);
+				regioner = await regRespons.json();
+				console.log(regioner);
 
 				visSkoler();
 				opretKanpper();
 				}
 
 				function opretKanpper(){
-				categories.forEach(cat =>{document.querySelector("#skole-valg").innerHTML +=`<button class="filter" data-skole="${cat.id}">${cat.name}</button>`
+				regioner.forEach(region =>{document.querySelector("#regioner-valg").innerHTML +=`<button class="filter" data-skole="${region.id}">${region.name}</button>`
 				})
 
 					addEventListenerToButton();
 				}
 
 				function addEventListenerToButton(){
-					document.querySelectorAll("#skole-valg button").forEach(elm => {elm.addEventListener("click", filtrering);
+					document.querySelectorAll("#regioner-valg button").forEach(elm => {elm.addEventListener("click", filtrering);
 				})
 
 				
@@ -104,7 +104,7 @@ get_header();
 				console.log(skoler)
 				liste.innerHTML="";
 				skoler.forEach(skole =>{
-				if(filterSkole == "alle" || skole.categories.includes(parseInt(filterSkole))){
+				if(filterSkole == "alle" || skole.regioner.includes(parseInt(filterSkole))){
 					const klon = skabelon.cloneNode(true).content;
 				klon.querySelector("img").src = skole.logo.guid;
 				klon.querySelector("h3").textContent = skole.title.rendered;
