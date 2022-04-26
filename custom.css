@@ -21,7 +21,10 @@ h2 {
   color: #184887;
 }
 
-h3 {
+h3,
+h4,
+h5,
+h6 {
   font-family: rustica, sans-serif !important;
   font-weight: 600 !important;
   font-style: normal;
