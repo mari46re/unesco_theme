@@ -69,13 +69,6 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 2fr;
   font-size: 0.6rem;
-  text-align: right;
-  align-items: center;
-}
-
-#logo_container {
-  display: grid;
-  justify-content: flex-start;
 }
 
 /*--------SUB MENU -- Dvs de menuer der dukker op, når man hover i navigationen--------*/
@@ -91,7 +84,7 @@ a:hover {
 .sub-menu li a:hover,
 button:hover {
   transition: 0.2s;
-  background-color: rgb(240, 236, 202) !important;
+  background-color: #f7f7f3 !important;
   color: rgb(41, 41, 41) !important;
   text-shadow: 1px 2px #92d3ec !important;
 }
