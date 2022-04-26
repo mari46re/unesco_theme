@@ -121,6 +121,14 @@ button:hover {
   border: 1px solid #92d3ec;
   padding: 1rem;
 }
+
+/*LOGO i header -- Findes i template-parts/site-branding.php*/
+
+#logo {
+  width: 70% !important;
+  margin-right: 20px;
+}
+
 /*GRID  på filtrerings-sider*/
 @media (min-width: 1000px) {
   #projekt-oversigt,
