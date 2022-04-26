@@ -69,6 +69,13 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 2fr;
   font-size: 0.6rem;
+  align-items: center;
+  text-align: right;
+}
+
+#logo_container {
+  display: grid;
+  justify-content: flex-start;
 }
 
 /*--------SUB MENU -- Dvs de menuer der dukker op, når man hover i navigationen--------*/
