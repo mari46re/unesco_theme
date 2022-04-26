@@ -8,21 +8,21 @@ body {
 }
 
 h1 {
-  font-family: balboa-plus-fill, sans-serif;
+  font-family: balboa-plus-fill, sans-serif !important;
   font-weight: 400;
   font-style: normal;
   color: #232f66;
 }
 
 h2 {
-  font-family: rustica, sans-serif;
+  font-family: rustica, sans-serif !important;
   font-weight: 700;
   font-style: normal;
   color: #184887;
 }
 
 h3 {
-  font-family: rustica, sans-serif;
+  font-family: rustica, sans-serif !important;
   font-weight: 600;
   font-style: normal;
   color: #292929;
@@ -31,8 +31,10 @@ h3 {
 p,
 address,
 a,
-li {
-  font-family: rustica, sans-serif;
+li,
+button,
+input {
+  font-family: rustica, sans-serif !important;
   font-weight: 400;
   font-style: normal;
   color: #292929 !important;
