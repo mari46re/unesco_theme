@@ -49,7 +49,7 @@ get_header();
 	const skabelon = document.querySelector("template")
 	document.addEventListener("DOMContentLoaded", start);
 
-	const url = "https://mariksen.dk/kea/2-semester/09_cms/unesco_site/wp-json/wp/v2/projekt";
+	const url = "https://mariksen.dk/kea/2-semester/09_cms/unesco_site/wp-json/wp/v2/projekter";
 	const catUrl = "https://mariksen.dk/kea/2-semester/09_cms/unesco_site/wp-json/wp/v2/taxonomy=verdensmaal?per_page=100";
 
 function start(){
