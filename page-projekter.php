@@ -24,7 +24,7 @@ get_header();
 
 </select>
 
-<button id></button>
+<button id="søg"></button>
 
 <section id="projekt-oversigt"></section>
 		</main><!-- #main -->
@@ -94,9 +94,13 @@ function opretMuligheder(){
 
 function addEventListenerToOptions(){
 	console.log("nu tilføjer vi eventlisteners til mulighederne")
-	document.querySelectorAll("#verdensmaal-valg option").forEach(elm =>{elm.addEventListener("change", filtrering);
+	document.querySelectorAll("#verdensmaal-valg option").forEach(elm =>{elm.addEventListener("change", klikFiltrering);
 })	
 // document.querySelector("#projekt-valg").addEventListener("change", filtrering)
+}
+
+function klikFiltrering(){
+	document.querySelector("#søg").addEventListener("click", filtrering);
 }
 
 function filtrering(){
