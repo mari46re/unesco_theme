@@ -91,9 +91,8 @@ a:hover {
 .sub-menu li a:hover,
 button:hover {
   transition: 0.2s;
-  background-color: #f7f7f3 !important;
+  background-color: #92d3ec !important;
   color: rgb(41, 41, 41) !important;
-  text-shadow: 1px 2px #92d3ec !important;
 }
 
 /*---------Grid i galleriet på forsiden--------*/
