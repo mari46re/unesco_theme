@@ -14,7 +14,8 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-<h1 id="overskrift">Projekter</h1>
+<div class="projekter_indhold">
+		<h1 id="overskrift">Projekter</h1>
 <nav id="filtrering">
 <div class="dropdown" id="verdensmaal-valg">
     <!-- <option value="">Vælg</option> -->
@@ -24,6 +25,7 @@ get_header();
 	</div>
 </div>
 </nav>
+</div>
 
 <section id="verdensmaal-oversigt"></section>
 		</main><!-- #main -->

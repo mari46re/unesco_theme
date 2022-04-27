@@ -47,7 +47,7 @@ a:hover {
   color: #92d3ec !important;
 }
 
-#projekt-oversigt,
+#verdensmaal-oversigt,
 #overskrift,
 #skole-oversigt {
   display: grid;
@@ -154,7 +154,7 @@ hr {
 
 /*GRID  på filtrerings-sider*/
 @media (min-width: 1000px) {
-  #projekt-oversigt,
+  .projekter_indhold,
   #overskrift,
   #skole-oversigt {
     width: 1000px;
@@ -164,7 +164,7 @@ hr {
 }
 
 @media (max-width: 600px) {
-  #projekt-oversigt,
+  #verdensmaal-oversigt,
   #skole-oversigt {
     display: grid;
     grid-template-columns: 1fr 1fr;
