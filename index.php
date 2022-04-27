@@ -47,8 +47,8 @@ get_header();
 
 			function scrollFunction() {
 				if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-					document.getElementById("masthead").style.backgroundColor = "#f7f7f3e6";
-					document.getElementById("logo").style.padding = "1rem"
+					document.getElementById("masthead").style.backgroundColor = "#f7f7f3c5";
+					document.getElementByClass("logo_container").style.padding = "1rem"
 					
 				} else {
 					document.getElementById("masthead").style.backgroundColor = "none";
