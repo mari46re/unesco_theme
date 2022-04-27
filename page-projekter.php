@@ -31,7 +31,7 @@ get_header();
 		</main><!-- #main -->
 
 <template>
-	<article>
+	<article id="projekt_article">
 		<img src="" alt="">
 		<h3></h3>
 	</article>

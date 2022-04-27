@@ -81,6 +81,16 @@ a:hover {
   justify-content: flex-start;
 }
 
+#projekt_article {
+  border: 1px solid #92d3ec;
+}
+
+#project_article:hover {
+  cursor: pointer;
+  transform: scale(1);
+  transition: 0.1;
+}
+
 /*--------SUB MENU -- Dvs de menuer der dukker op, når man hover i navigationen--------*/
 .sub-menu {
   border: 1px solid black;
@@ -134,6 +144,7 @@ button:hover,
   padding: 1rem;
 }
 
+/*Hovednavigationen*/
 #masthead {
   padding: 0;
   margin-top: 1rem !important;
