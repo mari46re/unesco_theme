@@ -18,7 +18,8 @@ get_header();
 
 <div class="dropdown" id="verdensmaal-valg">
     <!-- <option value="">Vælg</option> -->
-    <button class="dropdown-content" onclick="toggleDropdown()" data-verdensmaal="alle">Alle</button>
+    <button onclick="toggleDropdown()" data-verdensmaal="alle">Alle</button>
+	<div id="myDropdown" class="dropdown-content"></div>
 </div>
 
 
@@ -88,7 +89,7 @@ async function hentData() {
 function opretMuligheder(){
 	console.log("nu er vi i opret muligheder")
 	verdensmaal.forEach(vm => {
-		document.querySelector(".dropdown-content").innerHTML +=`<button class="filter" data-projekt="${vm.id}">${vm.name}</button>`
+		document.querySelector("#verdensmaal-valg").innerHTML +=`<button class="filter" data-projekt="${vm.id}">${vm.name}</button>`
 	})
 
 	addEventListenerToOptions();
@@ -96,7 +97,7 @@ function opretMuligheder(){
 
 function addEventListenerToOptions(){
 	console.log("nu tilføjer vi eventlisteners til mulighederne")
-	document.querySelectorAll("#verdensmaal-valg button").forEach(elm =>{elm.addEventListener("click", toggleDropdown);
+	document.querySelectorAll("#verdensmaal-valg button").forEach(elm =>{elm.addEventListener("click", filtrering);
 })	
 // document.querySelector("#projekt-valg").addEventListener("change", filtrering)
 }
@@ -106,8 +107,8 @@ function addEventListenerToOptions(){
 // }
 
 function toggleDropdown() {
-  document.getElementById("verdensmaal-valg").classList.toggle("show", filtrering);
-  toggleDropdown();
+  document.getElementById("myDropdown").classList.toggle("show");
+}
 
 function filtrering(){
 	// valgt = document.querySelector("#projekt-valg option").value;
