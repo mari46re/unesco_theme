@@ -18,8 +18,10 @@ get_header();
 
 <div class="dropdown" id="verdensmaal-valg">
     <!-- <option value="">Vælg</option> -->
-    <button onclick="toggleDropdown()" data-verdensmaal="alle">Vælg et verdensmål</button>
-	<div id="myDropdown" class="dropdown-content"></div>
+    <button onclick="toggleDropdown()" class="dropbtn">Vælg et verdensmål</button>
+	<div id="myDropdown" class="dropdown-content">
+		<button data-verdensmaal="alle">Vælg et verdenmål</button>
+	</div>
 </div>
 
 
@@ -54,7 +56,7 @@ get_header();
 	let projekter = [];
 	let verdensmaal;
 	let valgt;
-	let filterProjekt = "alle";
+	let filter = "alle";
 
 	const liste = document.querySelector("#verdensmaal-oversigt")
 	const skabelon = document.querySelector("template")
@@ -89,7 +91,7 @@ async function hentData() {
 function opretMuligheder(){
 	console.log("nu er vi i opret muligheder")
 	verdensmaal.forEach(vm => {
-		document.querySelector("#verdensmaal-valg").innerHTML +=`<button class="filter" data-projekt="${vm.id}">${vm.name}</button>`
+		document.querySelector("#myDropdown").innerHTML +=`<button class="filter" data-projekt="${vm.id}">${vm.name}</button>`
 	})
 
 	addEventListenerToOptions();
@@ -97,7 +99,7 @@ function opretMuligheder(){
 
 function addEventListenerToOptions(){
 	console.log("nu tilføjer vi eventlisteners til mulighederne")
-	document.querySelectorAll("#verdensmaal-valg button").forEach(elm =>{elm.addEventListener("click", filtrering);
+	document.querySelectorAll("#myDropdown button").forEach(elm =>{elm.addEventListener("click", filtrering);
 })	
 // document.querySelector("#projekt-valg").addEventListener("change", filtrering)
 }
@@ -106,14 +108,13 @@ function addEventListenerToOptions(){
 // 	document.querySelector("#søg").addEventListener("click", filtrering);
 // }
 
-function toggleDropdown() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
+
 
 function filtrering(){
 	// valgt = document.querySelector("#projekt-valg option").value;
-	console.log("valgt"+this.dataset.projekt)
-	filterProjekt = this.dataset.projekt;
+	document.getElementById("myDropdown").classList.toggle("show")
+	console.log(valgt)
+	filter = this.dataset.value;
 	visProjekter();
 }
 
@@ -122,8 +123,8 @@ function filtrering(){
 function visProjekter(){
 	console.log(projekter)
 	liste.innerHTML="";
-	projekter.forEach(projekt =>{
-		if(filterProjekt == "alle" || projekt.verdensmaal.includes(parseInt(filterProjekt))){
+	projekter.forEach((projekt) =>{
+		if(filter == "alle" || projekt.verdensmaal.includes(parseInt(filter))){
 			const klon = skabelon.cloneNode(true).content;
 			klon.querySelector("img").src = projekt.billede2.guid;
 			klon.querySelector("h3").textContent = projekt.title.rendered;
@@ -132,6 +133,10 @@ function visProjekter(){
 	})
 }
 
+
+function toggleDropdown() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
 </script>
 			
 
