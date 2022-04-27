@@ -17,7 +17,7 @@ get_header();
 <h1 id="overskrift">Projekter</h1>
 <label for="pet-select">Vælg et verdensmål</label>
 
-<div name="verdensmaal" class="dropdown" id="verdensmaal-valg">
+<div class="dropdown" id="verdensmaal-valg">
     <!-- <option value="">Vælg</option> -->
     <button class="dropdown-content" onclick="toggleDropdown()" data-verdensmaal="alle">Alle</button>
 </div>
