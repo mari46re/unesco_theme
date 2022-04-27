@@ -155,6 +155,7 @@ hr {
 /*GRID  på filtrerings-sider*/
 @media (min-width: 1000px) {
   .projekter_indhold,
+  #verdensmaal-oversigt,
   #overskrift,
   #skole-oversigt {
     width: 1000px;
