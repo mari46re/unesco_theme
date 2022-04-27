@@ -84,7 +84,7 @@ async function hentData() {
 }
 
 
-}
+
 
 function opretMuligheder(){
 	console.log("nu er vi i opret muligheder")
