@@ -35,7 +35,7 @@ get_header();
 </template>
 
 <script>
-
+	// Her er koden for headeren, der ændres når man scroller
 			window.onscroll = function() {scrollFunction()};
 
 			function scrollFunction() {
@@ -89,7 +89,7 @@ async function hentData() {
 function opretMuligheder(){
 	console.log("nu er vi i opret muligheder")
 	verdensmaal.forEach(vm => {
-		document.querySelector("#verdensmaal-valg").innerHTML +=`<button class="filter" data-projekt="${vm.id}">${vm.name}</button>`
+		document.querySelector(".dropdown-content").innerHTML +=`<button class="filter" data-projekt="${vm.id}">${vm.name}</button>`
 	})
 
 	addEventListenerToOptions();

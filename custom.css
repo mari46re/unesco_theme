@@ -182,7 +182,7 @@ hr {
 
 .dropdown {
   position: relative;
-  display: inline-block;
+  display: inline-block !important;
 }
 
 .dropdown-content {
@@ -195,5 +195,5 @@ hr {
 }
 
 .show {
-  display: block;
+  display: block !important;
 }
