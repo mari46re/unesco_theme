@@ -67,12 +67,10 @@ get_header();
 function start(){
 	console.log("nu er vi i start")
 	hentData();
-	toggleDropdown();
+
 }
 
-function toggleDropdown() {
-  document.getElementById("verdensmaal-valg").classList.toggle("show");
-}
+
 
 async function hentData() {
         const respons = await fetch(url);
@@ -84,6 +82,11 @@ async function hentData() {
 
 		visProjekter();
 		opretMuligheder();
+}
+
+function toggleDropdown() {
+  document.getElementById("verdensmaal-valg").classList.toggle("show");
+  toggleDropdown();
 }
 
 function opretMuligheder(){
@@ -112,6 +115,8 @@ function filtrering(){
 	filterProjekt = this.dataset.value;
 	visProjekter();
 }
+
+
 
 function visProjekter(){
 	console.log(projekter)
