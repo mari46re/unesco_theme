@@ -189,7 +189,7 @@ hr {
 
 #myDropdown button,
 .dropbtn {
-  /* width: 100%; */
+  width: 100%;
   background-color: #f6f6f6 !important;
   border: 1px solid black;
 }
@@ -204,7 +204,6 @@ hr {
 .dropdown {
   position: relative;
   display: inline-block !important;
-  border: 1px solid black !important;
 }
 
 .dropdown-content {
@@ -216,6 +215,7 @@ hr {
   /* z-index: 1; */
   height: 400px;
   overflow: auto;
+  border: 1px solid #92d3ec !important;
 }
 
 .show {
