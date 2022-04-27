@@ -15,7 +15,7 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 <h1 id="overskrift">Projekter</h1>
-
+<nav id="filtrering">
 <div class="dropdown" id="verdensmaal-valg">
     <!-- <option value="">Vælg</option> -->
     <button onclick="toggleDropdown()" class="dropbtn">Vælg et verdensmål</button>
@@ -23,7 +23,7 @@ get_header();
 		<button data-verdensmaal="alle">Vælg et verdenmål</button>
 	</div>
 </div>
-
+</nav>
 
 <section id="verdensmaal-oversigt"></section>
 		</main><!-- #main -->

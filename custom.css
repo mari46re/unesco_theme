@@ -207,3 +207,9 @@ hr {
   display: block !important;
   gap: 5px;
 }
+
+#filtrering {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
