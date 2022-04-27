@@ -112,8 +112,8 @@ function toggleDropdown() {
 
 function filtrering(){
 	// valgt = document.querySelector("#projekt-valg option").value;
-	console.log("valgt"+this.dataset.value)
-	filterProjekt = this.dataset.value;
+	console.log("valgt"+this.dataset.projekt)
+	filterProjekt = this.dataset.projekt;
 	visProjekter();
 }
 
