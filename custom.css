@@ -81,11 +81,18 @@ a:hover {
   justify-content: flex-start;
 }
 
+/*Artiklerne på projekter-site*/
 #projekt_article {
+  background-color: #edf9fd;
   border: 1px solid #92d3ec;
+  margin: 0.5rem;
 }
 
-#project_article:hover {
+#projekt_article h4 {
+  margin: 1rem;
+}
+
+#projekt_article:hover {
   cursor: pointer;
   transform: scale(1);
   transition: 0.1;

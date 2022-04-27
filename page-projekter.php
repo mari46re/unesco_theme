@@ -33,7 +33,7 @@ get_header();
 <template>
 	<article id="projekt_article">
 		<img src="" alt="">
-		<h3></h3>
+		<h4></h4>
 	</article>
 </template>
 
@@ -129,7 +129,7 @@ function visProjekter(){
 		if(filter == "alle" || projekt.verdensmaal.includes(parseInt(filter))){
 			const klon = skabelon.cloneNode(true).content;
 			klon.querySelector("img").src = projekt.billede2.guid;
-			klon.querySelector("h3").textContent = projekt.title.rendered;
+			klon.querySelector("h4").textContent = projekt.title.rendered;
 			liste.appendChild(klon);
 		}
 	})
