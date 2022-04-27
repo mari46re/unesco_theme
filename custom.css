@@ -182,11 +182,13 @@ hr {
 /*DROPDOWN*/
 
 #myDropdown {
-  min-width: 230px;
+  width: 500px;
 }
 
 #myDropdown button {
   width: 100%;
+  background-color: #f6f6f6 !important;
+  border: 1px solid black;
 }
 
 .dropbtn {
