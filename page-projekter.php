@@ -18,12 +18,12 @@ get_header();
 
 <div class="dropdown" id="verdensmaal-valg">
     <!-- <option value="">Vælg</option> -->
-    <button onclick="toggleDropdown()" data-verdensmaal="alle">Alle</button>
+    <button onclick="toggleDropdown()" data-verdensmaal="alle">Vælg et verdensmål</button>
 	<div id="myDropdown" class="dropdown-content"></div>
 </div>
 
 
-<section id="projekt-oversigt"></section>
+<section id="verdensmaal-oversigt"></section>
 		</main><!-- #main -->
 
 <template>
@@ -56,7 +56,7 @@ get_header();
 	let valgt;
 	let filterProjekt = "alle";
 
-	const liste = document.querySelector("#projekt-oversigt")
+	const liste = document.querySelector("#verdensmaal-oversigt")
 	const skabelon = document.querySelector("template")
 	document.addEventListener("DOMContentLoaded", start);
 
