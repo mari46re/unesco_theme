@@ -92,7 +92,9 @@ a:hover {
 
 /*Listepunkternes styling når man hover dem*/
 .sub-menu li a:hover,
-button:hover {
+button:hover,
+.dropbtn:hover,
+#myDropdown button:hover {
   transition: 0.2s;
   background-color: #92d3ec !important;
   color: rgb(41, 41, 41) !important;
@@ -185,14 +187,15 @@ hr {
   width: 500px;
 }
 
-#myDropdown button {
-  width: 100%;
+#myDropdown button,
+.dropbtn {
+  /* width: 100%; */
   background-color: #f6f6f6 !important;
   border: 1px solid black;
 }
 
 .dropbtn {
-  width: 250px;
+  width: 500px;
   display: grid;
   place-self: center;
   margin-bottom: 5px;
