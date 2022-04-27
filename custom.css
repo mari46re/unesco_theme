@@ -180,6 +180,15 @@ hr {
 }
 
 /*DROPDOWN*/
+
+#myDropdown {
+  min-width: 230px;
+}
+
+#myDropdown button {
+  width: 100%;
+}
+
 .dropbtn {
   width: 250px;
   display: grid;
