@@ -29,7 +29,7 @@ get_header();
 		<script>
 
 			let kage;
-			const url = "https://mariksen.dk/kea/2-semester/09_cms/passion_site/wp-json/wp/v2/projekt/"+<?php echo get_the_ID() ?>;
+			const url = "https://mariksen.dk/kea/2-semester/09_cms/unesco_site/wp-json/wp/v2/projekt/"+<?php echo get_the_ID() ?>;
 
 			async function hentData() {
 				console.log("id er");
