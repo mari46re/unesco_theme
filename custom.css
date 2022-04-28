@@ -258,7 +258,7 @@ hr {
   grid-template-columns: 1fr 1fr;
 }
 
-.inhold img {
+#pic {
   width: 100% !important;
 }
 
