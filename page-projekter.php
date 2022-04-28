@@ -49,6 +49,7 @@ get_header();
 				} else {
 					document.getElementById("masthead").style.backgroundColor = "none";
 			}
+		}
 
 
 
