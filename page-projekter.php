@@ -116,7 +116,7 @@ function filtrering(){
 	// valgt = document.querySelector("#projekt-valg option").value;
 	document.getElementById("myDropdown").classList.toggle("show")
 	console.log(valgt)
-	filter = this.dataset.value;
+	filter = this.dataset.projekt;
 	visProjekter();
 }
 
