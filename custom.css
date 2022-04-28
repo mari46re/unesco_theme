@@ -258,6 +258,10 @@ hr {
   grid-template-columns: 1fr 1fr;
 }
 
+.inhold img {
+  width: 100%;
+}
+
 .text {
   font-size: 0.8rem;
 }
@@ -267,4 +271,8 @@ hr {
   border: 1px solid #92d3ec;
   margin-bottom: 2rem;
   margin-top: 3rem;
+}
+
+.enkeltProjekt {
+  margin-left: 2rem;
 }

@@ -18,7 +18,7 @@ get_header();
 		<button class="luk">Tilbage</button>
 			<section class="indhold">
 				<img id="pic" src="" alt="">
-				<article class="enkeltKage">
+				<article class="enkeltProjekt">
 					<h2></h2>
 					
 					<p class="text"></p>
