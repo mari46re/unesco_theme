@@ -207,7 +207,7 @@ hr {
     margin: 1rem;
   }
 
-  .projekt_article {
+  #projekt_article {
     grid-template-columns: 1fr 1fr;
     display: grid;
   }
