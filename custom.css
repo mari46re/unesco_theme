@@ -290,3 +290,11 @@ hr {
   position: absolute;
   top: 0;
 }
+
+/* Placering af "tilmeld" knap i footer */
+#wpforms-submit-537 {
+  top: -61px;
+  position: relative;
+  left: 269px;
+  font-size: 0.6rem;
+}
