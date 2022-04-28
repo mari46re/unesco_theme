@@ -27,6 +27,16 @@ get_header();
 		</main><!-- #main -->
 
 		<script>
+	window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+	if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+		document.getElementById("masthead").style.backgroundColor = "#f7f7f3e6";
+		document.getElementById("logo").style.padding = "1rem"
+		
+	} else {
+		document.getElementById("masthead").style.backgroundColor = "none";
+}
 
 			let projekt;
 			const url = "https://mariksen.dk/kea/2-semester/09_cms/unesco_site/wp-json/wp/v2/projekt/"+<?php echo get_the_ID() ?>;

@@ -39,7 +39,7 @@ get_header();
 
 <script>
 	// Her er koden for headeren, der ændres når man scroller
-			window.onscroll = function() {scrollFunction()};
+	window.onscroll = function() {scrollFunction()};
 
 			function scrollFunction() {
 				if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -49,7 +49,6 @@ get_header();
 				} else {
 					document.getElementById("masthead").style.backgroundColor = "none";
 			}
-}
 
 
 
