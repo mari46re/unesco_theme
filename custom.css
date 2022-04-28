@@ -68,6 +68,7 @@ a:hover {
   padding: 10px;
 }
 
+/*Noget i hovedmenuen*/
 .site-branding {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -79,6 +80,13 @@ a:hover {
 #logo_container {
   display: flex;
   justify-content: flex-start;
+}
+
+/*Projektsite*/
+
+#overskrift {
+  margin-top: 3rem;
+  margin: 2rem;
 }
 
 /*Artiklerne på projekter-site*/

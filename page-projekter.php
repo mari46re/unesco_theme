@@ -16,6 +16,9 @@ get_header();
 		<main id="main" class="site-main">
 <div class="projekter_indhold">
 		<h1 id="overskrift">Projekter</h1>
+		<p>På siden findes projekter indsendt af danske UNESCO verdensmålsskoler. Projekterne er alle med udgangspunkt i FNs 17 verdensmål og kan bruges som inspiration og motivation samt udgøre grundlaget for eksempelvis skoleprojekter, undersøgelser eller lignende.
+
+</p>
 <nav id="filtrering">
 <div class="dropdown" id="verdensmaal-valg">
     <!-- <option value="">Vælg</option> -->
