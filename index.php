@@ -52,7 +52,7 @@ function scrollFunction() {
 		
 	} else {
 		document.getElementById("masthead").style.backgroundColor = "none";
-}
+}}
 		</script>
 	</div><!-- .content-area -->
 

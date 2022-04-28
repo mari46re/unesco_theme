@@ -36,7 +36,7 @@ function scrollFunction() {
 		
 	} else {
 		document.getElementById("masthead").style.backgroundColor = "none";
-}
+}}
 
 			let projekt;
 			const url = "https://mariksen.dk/kea/2-semester/09_cms/unesco_site/wp-json/wp/v2/projekt/"+<?php echo get_the_ID() ?>;

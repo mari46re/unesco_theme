@@ -37,7 +37,7 @@ function scrollFunction() {
 		
 	} else {
 		document.getElementById("masthead").style.backgroundColor = "none";
-}</script>
+}}</script>
 	</div><!-- #primary -->
 
 <?php
