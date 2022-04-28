@@ -13,7 +13,7 @@ get_header();
 ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+		<main id="main" class="site-main skoler_indhold">
 		<h1 id="overskrift">SKOLER I NETVÆRKET</h1>
 		<p id="brødtekst-skolerinet">Se listen over de mange skoler, der er en del af det danske UNESCO ASP-netværk. Find også skolernes hjemmesider samt oplysningerne på de individuelle skolers kontaktpersoner.</p>
 		
@@ -78,14 +78,14 @@ get_header();
 				console.log(regioner);
 
 				visSkoler();
-				opretKanpper();
+				opretKnapper();
 				}
 
-				function opretKanpper(){
+				function opretKnapper(){
 				regioner.forEach(region =>{document.querySelector("#regioner-valg").innerHTML +=`<button class="filter" data-skole="${region.id}">${region.name}</button>`
 				})
 
-					addEventListenerToButton();
+				addEventListenerToButton();
 				}
 
 				function addEventListenerToButton(){
