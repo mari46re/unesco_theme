@@ -104,8 +104,8 @@ a:hover {
 
 #projekt_article:hover {
   cursor: pointer;
-  transform: scale(1.5);
-  transition: 0.1;
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 /*--------SUB MENU -- Dvs de menuer der dukker op, når man hover i navigationen--------*/
@@ -199,8 +199,12 @@ hr {
   #verdensmaal-oversigt,
   #skole-oversigt {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     margin-bottom: 100px;
+  }
+
+  .projekter_indhold {
+    margin: 1rem;
   }
 }
 @media only screen and (min-width: 1168px) {
