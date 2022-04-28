@@ -130,6 +130,9 @@ function visProjekter(){
 			const klon = skabelon.cloneNode(true).content;
 			klon.querySelector("img").src = projekt.billede2.guid;
 			klon.querySelector("h4").textContent = projekt.title.rendered;
+			klon
+          .querySelector("article")
+          .addEventListener("click", () => {location.href = projekt.link});
 			liste.appendChild(klon);
 		}
 	})

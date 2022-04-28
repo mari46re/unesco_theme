@@ -247,3 +247,10 @@ hr {
   justify-content: center;
   margin-bottom: 50px;
 }
+
+/*SINGLE VIEW*/
+
+.indhold {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
