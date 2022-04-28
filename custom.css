@@ -283,3 +283,10 @@ hr {
 .enkeltProjekt {
   margin-left: 2rem;
 }
+
+/*splash-sektion*/
+
+.splash_sektion {
+  position: absolute;
+  top: 0;
+}
