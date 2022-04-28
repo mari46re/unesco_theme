@@ -215,11 +215,6 @@ hr {
   border: 1px solid #92d3ec;
 }
 
-.luk {
-  background-color: #f6f6f6 !important;
-  border: 1px solid #92d3ec;
-}
-
 .dropbtn {
   width: 500px;
   display: grid;
@@ -261,4 +256,15 @@ hr {
 .indhold {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.text {
+  font-size: 0.8rem;
+}
+
+.luk {
+  background-color: #f6f6f6 !important;
+  border: 1px solid #92d3ec;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
 }
