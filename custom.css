@@ -170,8 +170,8 @@ button:hover,
 #masthead {
   padding: 0;
   margin-top: 1rem !important;
-  position: sticky !important;
-  top: 1rem;
+  position: fixed !important;
+  top: 0;
   z-index: 100;
 }
 /*LOGO i header -- Findes i template-parts/site-branding.php*/
