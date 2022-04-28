@@ -168,6 +168,7 @@ button:hover,
 
 /*Hovednavigationen*/
 #masthead {
+  width: 100vw;
   padding: 0;
   margin-top: 1rem !important;
   position: fixed !important;
