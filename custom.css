@@ -85,8 +85,8 @@ a:hover {
 /*Projektsite*/
 
 #overskrift {
-  margin-top: 3rem;
-  margin: 2rem;
+  margin-top: 3rem !important;
+  margin: 2rem !important;
 }
 
 /*Artiklerne på projekter-site*/
