@@ -104,7 +104,7 @@ a:hover {
 
 #projekt_article:hover {
   cursor: pointer;
-  transform: scale(1);
+  transform: scale(1.5);
   transition: 0.1;
 }
 
