@@ -37,12 +37,14 @@ get_header();
 			window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
+	const header = document.getElementById("masthead");
 	if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-		document.getElementById("masthead").style.backgroundColor = "#f7f7f3";
-
+		header.style.backgroundColor = "#f7f7f3";
+		header.style.transition = "0.1s";
 		
 	} else {
-		document.getElementById("masthead").style.backgroundColor = "#f7f7f3b1";
+		header.style.backgroundColor = "#f7f7f3b1";
+		header.style.transition = "0.1s";
 }
 }
 		</script>
