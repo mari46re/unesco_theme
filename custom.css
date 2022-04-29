@@ -319,3 +319,7 @@ hr {
   left: 269px;
   font-size: 0.6rem;
 }
+
+#post-2 > div > div:nth-child(1) {
+  margin: 0 !important;
+}
