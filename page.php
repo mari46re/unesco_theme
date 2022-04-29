@@ -46,7 +46,7 @@ function scrollFunction() {
 	} else {
 		header.style.backgroundColor = "#f7f7f3b1";
 		header.style.transition = "0.3s";
-		header.style.boxShadow = "none";
+		header.style.borderBottom = "none";
 
 }
 }
