@@ -184,7 +184,8 @@ button:hover,
 
 #logo {
   width: 55% !important;
-  margin-right: 60px;
+  /* margin-right: 60px; */
+  margin-top: 1rem;
 }
 
 /*Footer*/
