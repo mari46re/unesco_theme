@@ -1,5 +1,5 @@
 img {
-  width: 100% !important;
+  width: 100%;
 }
 
 ::before,
@@ -167,7 +167,7 @@ button:hover,
 /*Hovednavigationen*/
 #masthead {
   width: 100vw;
-  padding: 0;
+  padding: 1rem;
   position: fixed !important;
   top: 0;
   z-index: 100;
