@@ -324,3 +324,7 @@ hr {
 #post-2 > div > div:nth-child(1) {
   margin: 0 !important;
 }
+
+.wp-block-columns.alignwide {
+  margin-top: 5rem;
+}
