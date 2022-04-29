@@ -43,6 +43,7 @@ function scrollFunction() {
 		
 	} else {
 		document.getElementById("masthead").style.backgroundColor = "#f7f7f3b1";
+		document.getElementById("logo").style.padding = "0"
 }
 }
 		</script>
