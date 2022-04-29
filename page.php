@@ -37,12 +37,12 @@ get_header();
 			window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-	if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+	if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
 		document.getElementById("masthead").style.backgroundColor = "#f7f7f3";
 		document.getElementById("logo").style.padding = "1rem"
 		
 	} else {
-		document.getElementById("masthead").style.backgroundColor = "#f7f7f3e6";
+		document.getElementById("masthead").style.backgroundColor = "#f7f7f3b1";
 }
 }
 		</script>
