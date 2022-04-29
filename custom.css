@@ -171,6 +171,7 @@ button:hover,
   position: fixed !important;
   top: 0;
   z-index: 100;
+  background-color: #f7f7f3e6;
 }
 /*LOGO i header -- Findes i template-parts/site-branding.php*/
 
