@@ -41,7 +41,8 @@ a,
 li,
 button,
 input,
-label {
+label,
+select {
   font-family: rustica, sans-serif !important;
   font-weight: 400 !important;
   font-style: normal;
