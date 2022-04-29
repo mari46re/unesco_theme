@@ -182,6 +182,10 @@ button:hover,
   padding: 1rem;
 }
 
+.home .entry-header {
+  display: none;
+}
+
 /*Footer*/
 
 hr {

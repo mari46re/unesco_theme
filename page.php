@@ -40,11 +40,11 @@ function scrollFunction() {
 	const header = document.getElementById("masthead");
 	if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
 		header.style.backgroundColor = "#f7f7f3";
-		header.style.transition = "0.1s";
+		header.style.transition = "0.3s";
 		
 	} else {
 		header.style.backgroundColor = "#f7f7f3b1";
-		header.style.transition = "0.1s";
+		header.style.transition = "0.3s";
 }
 }
 		</script>
