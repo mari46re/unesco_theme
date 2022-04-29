@@ -20,7 +20,7 @@ h1 {
 
 /**/
 .has-text-color {
-  margin-top: 4rem;
+  margin-top: 4rem !important;
 }
 
 h2 {
