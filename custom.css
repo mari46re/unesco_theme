@@ -19,8 +19,7 @@ h1 {
 }
 
 /**/
-.has-text-color,
-#overskrift {
+.has-text-color {
   margin-top: 4rem !important;
 }
 
@@ -95,7 +94,7 @@ a:hover {
 /*Projektsite*/
 
 #overskrift {
-  margin-top: 3rem !important;
+  margin-top: 5rem !important;
   margin-bottom: 2rem !important;
 }
 
