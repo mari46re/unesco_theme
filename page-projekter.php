@@ -24,7 +24,7 @@ get_header();
     <!-- <option value="">Vælg</option> -->
     <button onclick="toggleDropdown()" class="dropbtn">Vælg et verdensmål</button>
 	<div id="myDropdown" class="dropdown-content">
-		<button data-verdensmaal="alle">Vælg et verdenmål</button>
+		<button data-verdensmaal="alle">Alle</button>
 	</div>
 </div>
 </nav>
@@ -70,25 +70,25 @@ get_header();
 	const url = "https://mariksen.dk/kea/2-semester/09_cms/unesco_site/wp-json/wp/v2/projekt";
 	const vmUrl = "https://mariksen.dk/kea/2-semester/09_cms/unesco_site/wp-json/wp/v2/verdensmaal?per_page=100";
 
-function start(){
-	console.log("nu er vi i start")
-	hentData();
+	function start(){
+		console.log("nu er vi i start")
+		hentData();
 
-}
+	}
+
+	async function hentData() {
+			const respons = await fetch(url);
+			const vmRespons = await fetch(vmUrl);
+
+			projekter = await respons.json();
+			verdensmaal = await vmRespons.json();
+			console.log(verdensmaal);
+
+			visProjekter();
+			opretMuligheder();
+	}
 
 
-
-async function hentData() {
-        const respons = await fetch(url);
-		const vmRespons = await fetch(vmUrl);
-
-        projekter = await respons.json();
-		verdensmaal = await vmRespons.json();
-		console.log(verdensmaal);
-
-		visProjekter();
-		opretMuligheder();
-}
 
 
 

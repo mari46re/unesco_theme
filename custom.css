@@ -144,10 +144,6 @@ button:hover,
   grid-template-columns: 2fr 1fr 1fr !important;
 }
 
-#post-2 > div > div:nth-child > div:nth-child > figure:nth-child {
-  height: 200px;
-}
-
 #post-2
   > div
   > div:nth-child(8)
