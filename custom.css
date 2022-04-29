@@ -19,7 +19,8 @@ h1 {
 }
 
 /**/
-.has-text-color {
+.has-text-color,
+#overskrift {
   margin-top: 4rem !important;
 }
 
