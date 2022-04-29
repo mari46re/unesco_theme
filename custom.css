@@ -19,7 +19,8 @@ h1 {
 }
 
 /**/
-.has-text-color {
+.has-text-color,
+.entry-content h1 {
   margin-top: 4rem !important;
 }
 
