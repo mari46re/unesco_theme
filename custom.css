@@ -188,6 +188,10 @@ button:hover,
 
 /*Footer*/
 
+#colophon {
+  background-color: #184887;
+}
+
 hr {
   border: 1px solid grey;
 }
