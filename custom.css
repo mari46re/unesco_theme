@@ -191,6 +191,7 @@ button:hover,
 
 #colophon {
   background-color: #184887;
+  margin: 1rem;
 }
 
 /*GRID  på filtrerings-sider*/
@@ -202,6 +203,11 @@ button:hover,
     width: 1000px;
     margin: auto;
     margin-bottom: 100px;
+  }
+
+  .indhold {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -278,11 +284,6 @@ button:hover,
 
 /*SINGLE VIEW*/
 
-.indhold {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
 #pic {
   width: 100% !important;
 }
@@ -320,4 +321,8 @@ button:hover,
 
 #post-2 > div > div:nth-child(1) {
   margin: 0 !important;
+}
+
+.wp-block-columns.alignwide {
+  margin-top: 5rem !important;
 }
