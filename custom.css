@@ -90,7 +90,8 @@ a:hover {
 
 /*Projektsite*/
 
-#overskrift {
+#overskrift,
+.luk {
   margin-top: 150px !important;
   margin-bottom: 2rem !important;
 }
@@ -190,10 +191,6 @@ button:hover,
 
 #colophon {
   background-color: #184887;
-}
-
-hr {
-  border: 1px solid grey;
 }
 
 /*GRID  på filtrerings-sider*/
