@@ -191,7 +191,11 @@ button:hover,
 
 #colophon {
   background-color: #184887;
-  margin: 1rem;
+  padding: 1rem;
+}
+
+#colophon a {
+  color: #f7f7f3;
 }
 
 /*GRID  på filtrerings-sider*/
